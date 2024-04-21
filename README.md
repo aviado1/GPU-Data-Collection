@@ -1,11 +1,11 @@
 # GPU Data Collection Script
 
-This PowerShell script establishes an SSH connection to a remote server to continuously collect GPU utilization and memory usage data for a 24-hour period and exports this data to an Excel file.
+This PowerShell script establishes an SSH connection to a remote server to continuously track and log GPU load and GPU memory usage. It collects this data for a 24-hour period and exports it to an Excel file.
 
 ## Features
 
-- **Continuous Monitoring**: Collects data in intervals and computes total averages over 24 hours.
-- **Excel Export**: Outputs the data to an Excel file with detailed interval and total average sheets.
+- **Continuous Monitoring**: Tracks and logs GPU load and GPU memory usage in intervals and computes total averages over 24 hours.
+- **Excel Export**: Outputs the tracked data to an Excel file with detailed interval and total average sheets.
 - **Easy Configuration**: Customize the server IP, username, password, and export path as needed.
 
 ## Prerequisites
@@ -31,8 +31,8 @@ Modify the `serverIP`, `username`, `password`, and `exportPath` variables to fit
 ## Example Output
 
 The script exports the GPU data to an Excel file, which includes:
-- **Intervals Worksheet**: Shows each data point collected at intervals.
-- **Total Averages Worksheet**: Shows the average utilization and memory usage calculated over the entire collection period.
+- **Intervals Worksheet**: Shows each data point collected at intervals, including GPU load and memory usage.
+- **Total Averages Worksheet**: Shows the average GPU load and memory usage calculated over the entire collection period.
 
 ## Disclaimer
 
