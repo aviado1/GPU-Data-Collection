@@ -124,3 +124,9 @@ $totalAverageLoads = $gpuData | Group-Object GPUIndex | ForEach-Object {
 $totalAverageLoads | Export-Excel -Path $excelPath -WorksheetName "TotalAverages" -AutoSize -TableName "TotalAverageData" -Append
 
 Write-Host "Data and total averages exported to $excelPath"
+
+# Delay the script for 5 seconds
+Start-Sleep -Seconds 5
+
+# Restart the script
+Start-Process "powershell.exe" -ArgumentList "-File `"$PSCommandPath`""
